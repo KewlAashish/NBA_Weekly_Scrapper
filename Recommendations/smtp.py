@@ -1,14 +1,12 @@
 from email.message import EmailMessage
 import ssl
 import smtplib
-import json
 
 class ManagingMails:
 
     def sendMail(self, data):
 
-        # Formatting the data
-        data_formatted = json.dumps(data)
+
 
         sent_from = 'nbanotifierscraper@gmail.com'
         senderPassword = 'rlemdemqeqfjocix'
@@ -17,7 +15,7 @@ class ManagingMails:
         body = f"""
         Heyoo here's the week recap of NBA
         
-        {data_formatted}
+        {data}
         """
         em = EmailMessage()
         em['From'] = sent_from

@@ -11,7 +11,6 @@ from Recommendations.smtp import ManagingMails
 
 class Recommendations(webdriver.Chrome):
     def __init__(self, driver_path=r"D:\webdrivers", teardown=False):
-        self.report = None
         self.driver_path = driver_path
 
         #   Teardown to know when to let the window get closed
@@ -41,12 +40,12 @@ class Recommendations(webdriver.Chrome):
             By.ID,
             resources.overall_lists_div_id
         )
-        self.report = finalReport(ListSectionElement=VideosListdiv)
-        #   table = PrettyTable(
-        #    ["Video Title", "Views", "Channel"]
-        # )
-        # table.add_rows(report.pull_videos_attributes())
-        return self.report.pull_videos_attributes()
+        report = finalReport(ListSectionElement=VideosListdiv)
+        table = PrettyTable(
+            ["Video Title", "Views", "Channel"]
+        )
+        table.add_rows(report.pull_videos_attributes())
+        return table
 
     def download_csv_report(self):
         nbarecomFinal = self.getNBARecommendations()
