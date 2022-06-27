@@ -6,3 +6,5 @@ What is NBAWeekly?
   I am an Indian citizen and hence face various problems due to the NBA matches being conducted occur at a very unusual time and hence I miss out on a lot of NBA 
   matches. To overcome such an issue and implement my selenium skills in order to find a solution, I created this scraper bot.
  
+Here's a sample mail recieved by the bot:
+![image](https://user-images.githubusercontent.com/76493816/175961128-effe0f32-3a9d-41ea-a112-37ad96f21eb6.png)
