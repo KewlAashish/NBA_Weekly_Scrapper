@@ -7,4 +7,11 @@ What is NBAWeekly?
   matches. To overcome such an issue and implement my selenium skills in order to find a solution, I created this scraper bot.
  
 Here's a sample mail recieved by the bot:
+
 ![image](https://user-images.githubusercontent.com/76493816/175961128-effe0f32-3a9d-41ea-a112-37ad96f21eb6.png)
+
+How to use this bot?
+  We can schedule a task on our own device using the task scheduler for weekly basis. Create a bat file for the 'run.py' script and set a weeekly task on the task         scheduler.
+  
+  Another way to host it live is by deploying it in the AWS and create an AWS lambda function to trigger it by adding the python and the webdriver layer. Create a API
+  Gateway trigger function and it's done.
